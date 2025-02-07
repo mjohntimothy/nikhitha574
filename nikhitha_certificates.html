@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3D Photo Display</title>
+  <style>
+    /* General Styles */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: linear-gradient(135deg, #282c34, #4e54c8);
+      color: #fff;
+      padding: 20px; /* Add padding to avoid edge clipping */
+      box-sizing: border-box;
+    }
+
+    .gallery {
+      display: flex;
+      flex-direction: column;
+      gap: 40px; /* Ensure sufficient gap between photos */
+      perspective: 1000px;
+    }
+
+    .photo-container {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+      transition: transform 0.5s ease-in-out;
+      overflow: hidden;
+    }
+
+    .photo-container img {
+      width: 100%;
+      height: auto; /* Maintain image aspect ratio */
+      display: block; /* Remove default inline spacing */
+    }
+
+    .photo-container:hover {
+      transform: translateY(-20px) scale(1.02);
+    }
+  </style>
+</head>
+<body>
+  <div class="gallery">
+    <div class="photo-container">
+      <img src="nikhitha_XLR.jpg" alt="nikhitha_XLR">
+    </div>
+	<div class="photo-container">
+      <img src="nikhitha_CS.jpg" alt="nikhitha_CS">
+    </div>
+<div
+<div class="photo-container">
+      <img src="nikhitha_edx1.jpg" alt="nikhitha_edx1">
+    </div>
+    <div class="photo-container">
+      <img src="nikhitha_edx2.jpg" alt="nikhitha_edx2">
+    </div>
+  </div>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      console.log("3D photo display loaded.");
+    });
+  </script>
+</body>
+</html>
